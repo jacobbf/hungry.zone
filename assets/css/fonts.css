@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Hugh";
+  src: url(../fonts/hugh.woff2) format("woff2"),
+       url(../fonts/hugh.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Petit";
+  src: url(../fonts/petitformalscript.woff2) format("woff2"),
+       url(../fonts/petitformalscript.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+

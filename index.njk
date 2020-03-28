@@ -1,0 +1,38 @@
+---
+title: Recipe Test
+layout: /layouts/base.njk
+eleventyNavigation:
+  key: Home
+---
+
+
+<h1 class="home">{{ metadata.title }}</h1>
+
+<ul class="post-list">
+  <li class="post-list__item post-list__item--about">
+    <div>
+      <a href="">
+        {{ metadata.description }}
+        <span>Read More</span>
+      </a>
+    </div>
+  </li>
+
+  {% for post in collections.post | reverse %}
+    <li class="post-list__item post-list__item--post">
+      <div>
+          <a
+            href="{{ post.url }}"
+            style="background-color: #{{ post.data.bgcolor | safe }}; color: #{{ post.data.txcolor | safe }};"
+          >
+          <span>
+            {{ post.data.time }}
+          </span>
+          <h2>
+            {{ post.data.title }}
+          </h2>
+        </a>
+      </div>
+    </li>
+  {% endfor %}
+</ul>

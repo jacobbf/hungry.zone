@@ -1,0 +1,11 @@
+---
+permalink: /assets/css/index.css
+---
+
+{% set css %}
+  {% include "./normalize.css" %}
+  {% include "./fonts.css" %}
+  {% include "./main.css" %}
+{% endset %}
+
+{{ css | cssmin | safe }}   

@@ -2,7 +2,8 @@
 title: Recipe Test
 layout: /layouts/base.njk
 eleventyNavigation:
-  key: Home
+  key: Home 
+  order: 1
 ---
 
 
@@ -27,7 +28,7 @@ eleventyNavigation:
       <li class="postcard postcard--post postcard--recipe">
         <div>
           <a href="{{ post.url }}"
-            style="background-color: #{{ post.data.bgcolor | safe }}; color: #{{ post.data.txcolor | safe }};">
+            style="background-color: {{ post.data.bgcolor | safe }}; color: {{ post.data.txcolor | safe }};">
             <h3>{{ post.data.title }}</h3>
             <span class="postcard__time">{{ post.data.time }}</span>
           </a>
@@ -37,7 +38,7 @@ eleventyNavigation:
       <li class="postcard postcard--post postcard--article">
         <div>
           <a href="{{ post.url }}"
-            style="background-color: #{{ post.data.bgcolor | safe }}; color: #{{ post.data.txcolor | safe }};">
+            style="background-color: {{ post.data.bgcolor | safe }}; color: {{ post.data.txcolor | safe }};">
             <h3>{{ post.data.title }}</h3>
             <span class="postcard__author">By {{ post.data.author }}</span>
           </a>

@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: "Hugh";
+  font-family: "Hugh", sans-serif;
   box-sizing: border-box;
   background-color: #fdfcfb;
   color: #0b0b0b;
@@ -26,7 +26,7 @@ h3 {
 }
 
 h1 {
-  font-family: "Petit";
+  font-family: "Petit", cursive;
   font-size: 14vw;
   text-transform: uppercase;
   text-align: center;

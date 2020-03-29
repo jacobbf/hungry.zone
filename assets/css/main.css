@@ -88,11 +88,11 @@ main {
   padding: 0;
   flex-flow: row wrap;
   align-items: flex-start;
-  font-size: 28px;
+  font-size: 48px;
 }
 
 .postcard {
-  max-width: 50%;
+  max-width: 100%;
   width: 100%;
   display: block;
   padding: 0 4px;
@@ -113,8 +113,8 @@ main {
   height: 100%;
   background-color: #0b0b0b;
   color: #fdfcfb;
-  border-radius: 24px;
-  padding: 14px 16px;
+  border-radius: 26px;
+  padding: 18px 22px;
   transform: translateY(0);
   transition: .3s ease transform;
 }
@@ -149,7 +149,7 @@ main {
 .postcard--about a {
   line-height: .88em;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-flow: column;
   justify-content: space-between;
   background-color: #ffecec;
@@ -158,6 +158,7 @@ main {
 
 .postcard--about__description {
   font-family: "Fraunces", serif;
+  max-width: 7em;
 }
 
 .postcard--about__decorators {
@@ -177,7 +178,7 @@ main {
   text-align: right;
   font-weight: bolder;
   color: #fdfcfb;
-  font-size: 26px;
+  font-size: 42px;
 }
 
 .postcard--article {
@@ -202,11 +203,37 @@ main {
 }
 
 .postcard__author {
-  font-size: 24px;
+  font-size: 32px;
 }
 
 
-@media screen and (min-width: 576px) { 
+@media screen and (min-width: 576px) {
+  .postcard {
+    max-width: 50%;
+  }
+  
+  .postcard {
+    padding: 0 8px;
+  }
+
+  .post-list {
+    font-size: 32px;
+  }
+
+  .postcard__time {
+    font-size: 28px;
+  }
+
+  .postcard__author {
+    font-size: 22px;
+  }
+
+  .postcard a {
+    padding: 14px 16px;
+  }
+}
+
+@media screen and (min-width: 650px) { 
   .postcard {
     padding: 0 8px;
   }
@@ -219,13 +246,11 @@ main {
     font-size: 32px;
   }
 
-
   .postcard__author {
     font-size: 24px;
   }
 
   .postcard a {
-    border-radius: 26px;
     padding: 16px 18px;
   }
 }

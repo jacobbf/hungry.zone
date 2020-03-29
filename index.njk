@@ -9,30 +9,40 @@ eleventyNavigation:
 <h1 class="home">{{ metadata.title }}</h1>
 
 <ul class="post-list">
-  <li class="post-list__item post-list__item--about">
+  <li class="postcard postcard--about">
     <div>
-      <a href="">
-        {{ metadata.description }}
-        <span>Read More</span>
+      <a href="{{ 'about' | url }}">
+        <span class="postcard--about__description">
+          {{ metadata.description }}
+        </span>
+        <span class="postcard--about__decorators">
+          <span class="decorators__more">Read More</span>
+        </span>
       </a>
     </div>
   </li>
 
   {% for post in collections.post | reverse %}
-    <li class="post-list__item post-list__item--post">
-      <div>
-          <a
-            href="{{ post.url }}"
-            style="background-color: #{{ post.data.bgcolor | safe }}; color: #{{ post.data.txcolor | safe }};"
-          >
-          <span>
-            {{ post.data.time }}
-          </span>
-          <h2>
-            {{ post.data.title }}
-          </h2>
-        </a>
-      </div>
-    </li>
+    {% if post.data.eleventyNavigation.key === 'Recipe' %}
+      <li class="postcard postcard--post postcard--recipe">
+        <div>
+          <a href="{{ post.url }}"
+            style="background-color: #{{ post.data.bgcolor | safe }}; color: #{{ post.data.txcolor | safe }};">
+            <h3>{{ post.data.title }}</h3>
+            <span class="postcard__time">{{ post.data.time }}</span>
+          </a>
+        </div>
+      </li>
+    {% else %}
+      <li class="postcard postcard--post postcard--article">
+        <div>
+          <a href="{{ post.url }}"
+            style="background-color: #{{ post.data.bgcolor | safe }}; color: #{{ post.data.txcolor | safe }};">
+            <h3>{{ post.data.title }}</h3>
+            <span class="postcard__author">By {{ post.data.author }}</span>
+          </a>
+        </div>
+      </li>
+    {% endif %}
   {% endfor %}
 </ul>

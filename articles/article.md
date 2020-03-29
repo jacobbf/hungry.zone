@@ -1,7 +1,7 @@
 ---
-title: A Short Guide to Lentils
-time: 20Min
+title: A short guide to lentils
+author: Madison Fink
 layout: /layouts/article.njk
-txcolor: FFB951
-bgcolor: 6028FF
+txcolor: FFED4F
+bgcolor: ad8516
 ---

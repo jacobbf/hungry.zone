@@ -146,6 +146,11 @@ main {
   max-width: 5.75em;
 }
 
+.postcard a:hover h3,
+.postcard a:hover .postcard--about__description {
+  text-decoration: underline;
+}
+
 .postcard--about a {
   line-height: .88em;
   display: flex;
@@ -162,9 +167,13 @@ main {
 }
 
 .postcard--about__decorators {
-  font-size: 16px;
+  font-size: 24px;
   white-space: nowrap;
-  max-height: 144px;
+  padding: 0 6px;
+  line-height: 1.4;
+}
+
+.decorators__more {
 }
 
 .postcard--recipe a {
@@ -228,6 +237,10 @@ main {
     font-size: 22px;
   }
 
+  .postcard--about__decorators {
+    font-size: 16px;
+  }
+
   .postcard a {
     padding: 14px 16px;
   }
@@ -288,22 +301,5 @@ main {
 
   .postcard__author {
     font-size: 28px;
-  }
-
-  .postcard--about a {
-    align-items: center;
-    flex-flow: row nowrap;
-  }
-
-  .postcard--about__decorators {
-    max-width: 1.25em;
-    height: 100%;
-  }
-
-  .decorators__more {
-    display: inline-block;
-    transform: rotate(-90deg) translate(-98%, 1px);
-    transform-origin: top left;
-    line-height: 1;
   }
 }

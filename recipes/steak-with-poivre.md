@@ -1,5 +1,5 @@
 ---
-title: Steak Au Poive
+title: Steak With Poivre
 time: 40Min
 layout: /layouts/recipe.njk
 txcolor: 498D37

@@ -5,8 +5,9 @@ permalink: /assets/css/index.css
 {% set css %}
   {% include "./normalize.css" %}
   {% include "./fonts.css" %}
-  {% include "./cards.css" %}
   {% include "./main.css" %}
+  {% include "./cards.css" %}
+  {% include "./recipe.css" %}
 {% endset %}
 
 {{ css | cssmin | safe }}   

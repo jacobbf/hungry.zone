@@ -7,13 +7,16 @@ eleventyNavigation:
   key: Recipe
   parent: Home
 ---
-<h1 class="article-title" style="color: {{ txcolor | safe }};">{{ title }}</h1>
+
 <article class="recipe">
-  <div class="recipe__header">
-    <div class="recipe__headline">
-      <h2>{{ title }}</h2>
-      <span class="recipe__time">{{ time }}</span>
-    </div>
+  <h1 class="recipe__title">
+    {{ title }}
+  </h1>
+  <p class="recipe__lede" style="color: {{ txcolor | safe }}; background-color: {{ bgcolor | safe }};">
+    {{ lede }}
+  </p>
+  <div class="recipe__author">
+    Contributed by {{ author }}
   </div>
   <div class="recipe__main">
     {{ content | safe }} 

@@ -1,41 +1,21 @@
-.article-title {
-  
-}
-
 .recipe {
   letter-spacing: 0;
   line-height: 1.2;
 }
 
-.recipe__headline {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 36px;
-}
-
-.recipe__header p {
-  max-width: 640px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 32px 0;
-  border-radius: 16px;
-  font-family: "Fraunces", serif;
-}
-
-.recipe__time {
-  font-family: "Fraunces", serif;
-}
-
-
-.recipe__main {
-  background: #ffebe0;
-  border-radius: 26px;
-  padding: 16px;
-  font-family: "Fraunces", serif;
-}
-
-.recipe__main>* {
+.recipe>*:not(.recipe__title) {
   max-width: 720px;
-  margin: 32px auto;
+  margin: 0 auto;
+}
+
+.recipe__lede, .recipe__main {
+  font-family: "Fraunces", serif;
+}
+
+.recipe__lede {
+  font-size: 40px;
+}
+
+.recipe__author {
+  text-align: center;
 }

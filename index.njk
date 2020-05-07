@@ -6,23 +6,11 @@ eleventyNavigation:
   order: 1
 ---
 
-
-<h1 class="home">{{ metadata.title }}</h1>
+<div class="intro">
+  <h1 class="home">{{ metadata.title }}</h1>, <p>an online, everyday, community cookbook. Click <a href="#info">here</a> to learn more or contribute</p>
+</div>
 
 <ul class="post-list">
-  <li class="postcard postcard--about">
-    <div>
-      <a href="{{ 'about' | url }}">
-        <span class="postcard--about__description">
-          {{ metadata.description }}
-        </span>
-        <span class="postcard--about__decorators">
-          About Hungry Zone
-        </span>
-      </a>
-    </div>
-  </li>
-
   {% for post in collections.post | reverse %}
     {% if post.data.eleventyNavigation.key === 'Recipe' %}
       <li class="postcard postcard--post postcard--recipe">
@@ -47,3 +35,11 @@ eleventyNavigation:
     {% endif %}
   {% endfor %}
 </ul>
+
+<section id="info">
+  <h2>Contribute:</h2>
+</section>
+
+<section>
+  <h2>About:</h2>
+</section>

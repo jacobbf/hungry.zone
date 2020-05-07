@@ -63,32 +63,10 @@
   max-width: 5.75em;
 }
 
-.postcard a:hover h3,
-.postcard a:hover .postcard--about__description {
+.postcard a:hover h3 {
   text-decoration: underline;
 }
 
-.postcard--about a {
-  line-height: .88em;
-  display: flex;
-  align-items: flex-start;
-  flex-flow: column;
-  justify-content: space-between;
-  background-color: #ffecec;
-  color: #0b0b0b;
-}
-
-.postcard--about__description {
-  font-family: "Fraunces", serif;
-  max-width: 7em;
-}
-
-.postcard--about__decorators {
-  font-size: 24px;
-  white-space: nowrap;
-  padding: 0 6px;
-  line-height: 1.4;
-}
 
 .postcard--recipe a {
   display: flex;
@@ -99,9 +77,9 @@
 .postcard__time {
   font-family: "Fraunces", serif;
   text-align: right;
-  font-weight: bolder;
   color: #fdfcfb;
   font-size: 42px;
+  letter-spacing: -.07em;
 }
 
 .postcard--article {
@@ -151,10 +129,6 @@
     font-size: 32px;
   }
 
-  .postcard--about__decorators {
-    font-size: 16px;
-  }
-
   .postcard a {
     padding: 14px 16px;
   }
@@ -191,10 +165,6 @@
 }
 
 @media screen and (min-width: 1080px) {
-  h1 {
-    font-size: 106px;
-  }
-  
   .post-list {
     font-size: 42px;
   }

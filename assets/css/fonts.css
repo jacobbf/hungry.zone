@@ -8,28 +8,10 @@
 }
 
 @font-face {
-  font-family: "Petit";
-  src: url(../fonts/petitformalscript.woff2) format("woff2"),
-       url(../fonts/petitformalscript.woff) format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Fraunces";
   src: url(../fonts/fraunces-regularopmin.woff2) format("woff2"),
        url(../fonts/fraunces-regularopmin.woff) format("woff");
   font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Fraunces";
-  src: url(../fonts/fraunces-semiboldopmin.woff2) format("woff2"),
-       url(../fonts/fraunces-semiboldopmin.woff) format("woff");
-  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }

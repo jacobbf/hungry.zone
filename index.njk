@@ -6,40 +6,26 @@ eleventyNavigation:
   order: 1
 ---
 
-<div class="intro">
-  <h1 class="home">{{ metadata.title }}</h1>, <p>an online, everyday, community cookbook. Click <a href="#info">here</a> to learn more or contribute</p>
+{% import "_includes/components/cards.njk" as cards %}
+
+<div class="intro type--fraunces-large">
+  <h1 class="home">{{ metadata.title }}</h1>, <p>an online, everyday, community cookbook. Click <a href="#info">here</a> to learn more and contribute</p>
 </div>
 
 <ul class="post-list">
   {% for post in collections.post | reverse %}
     {% if post.data.eleventyNavigation.key === 'Recipe' %}
-      <li class="postcard postcard--post postcard--recipe">
-        <div>
-          <a href="{{ post.url }}"
-            style="background-color: {{ post.data.bgcolor | safe }}; color: {{ post.data.txcolor | safe }};">
-            <h3>{{ post.data.title }}</h3>
-            <span class="postcard__time">{{ post.data.time }}</span>
-          </a>
-        </div>
-      </li>
+      {{ cards.recipe(post) }}
     {% else %}
       <li class="postcard postcard--post postcard--article">
         <div>
           <a href="{{ post.url }}"
             style="background-color: {{ post.data.bgcolor | safe }}; color: {{ post.data.txcolor | safe }};">
-            <h3>{{ post.data.title }}</h3>
-            <span class="postcard__author">By {{ post.data.author }}</span>
+            <h3 class="type--card-title">{{ post.data.title }}</h3>
+            <span class="postcard__author type--card-author">By {{ post.data.author }}</span>
           </a>
         </div>
       </li>
     {% endif %}
   {% endfor %}
 </ul>
-
-<section id="info">
-  <h2>Contribute:</h2>
-</section>
-
-<section>
-  <h2>About:</h2>
-</section>

@@ -1,0 +1,23 @@
+{% macro recipe(post) %}
+    <li class="postcard postcard--post postcard--recipe">
+      <div>
+        <a href="{{ post.url }}"
+          style="background-color: {{ post.data.bgcolor | safe }}; color: {{ post.data.txcolor | safe }};">
+          <h3 class="type--card-title">{{ post.data.title }}</h3>
+          <span class="postcard__time type--card-time">{{ post.data.time }}</span>
+        </a>
+      </div>
+    </li>
+{% endmacro %}
+
+{% macro article(post) %}
+    <li class="postcard postcard--post postcard--recipe">
+      <div>
+        <a href="{{ post.url }}"
+          style="background-color: {{ post.data.bgcolor | safe }}; color: {{ post.data.txcolor | safe }};">
+          <h3 class="type--card-title">{{ post.data.title }}</h3>
+          <span class="postcard__time type--card-time">{{ post.data.time }}</span>
+        </a>
+      </div>
+    </li>
+{% endmacro %}

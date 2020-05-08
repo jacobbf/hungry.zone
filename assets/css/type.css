@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Hugh Grotesk";
+  src: url(../fonts/HughGrotesk-Regular.woff2) format("woff2"),
+       url(../fonts/HughGrotesk-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url(../fonts/fraunces-regularopmin.woff2) format("woff2"),
+       url(../fonts/fraunces-regularopmin.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Type Styles */
+* {
+  font-style: normal;
+  font-weight: normal;
+}
+
+.type--hugh-body {
+  font-family: "Hugh Grotesk";
+  font-size: 20px;
+  line-height: 125%;
+}
+
+.type--hugh-body-indented {
+  font-family: "Hugh Grotesk";
+  font-size: 20px;
+  line-height: 125%;
+  
+  text-indent: 24px;
+}
+
+.type--ui-button {
+  font-family: "Hugh Grotesk";
+  font-size: 12px;
+  line-height: 82%;
+  
+  letter-spacing: -0.02em;
+}
+
+.type--fraunces-large {
+  font-family: "Fraunces";
+  font-size: 30px;
+  line-height: 100%;
+
+  letter-spacing: -0.02em;
+}
+
+.type--fraunces-mid {
+  font-family: "Fraunces";
+  font-size: 24px;
+  line-height: 100%;
+
+  letter-spacing: -0.02em;
+}
+
+.type--card-time {
+  font-family: Fraunces;
+  font-size: 40px;
+  line-height: 100%;
+
+  text-align: right;
+  letter-spacing: -0.07em;
+
+}
+
+.type--card-author {
+  font-family: "Hugh Grotesk";
+  font-size: 24px;
+  line-height: 100%;
+}
+
+.type--card-title {
+  font-family: "Hugh Grotesk";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 100%;
+
+  letter-spacing: -0.02em;
+}
+
+
+@media screen and (min-width: 625px) {
+
+  .type--hugh-body {
+    font-size: 20px;
+  }
+  
+  .type--hugh-body-indented {
+    font-size: 20px;
+  }
+  
+  .type--ui-button {
+    font-size: 12px;
+  }
+  
+  .type--fraunces-large {
+    font-size: 36px;
+  }
+  
+  .type--fraunces-mid {
+    font-size: 24px;
+  }
+  
+  .type--card-time {
+    font-size: 32px;
+  }
+  
+  .type--card-author {
+    line-height: 100%;
+  }
+  
+  .type--card-title {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,66 @@
+.recipe {
+  max-width: 508px;
+  /* max-width: 400px; */
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+.recipe__main>*:not(hr) {
+  padding-left: 16px;
+}
+
+.recipe__title {
+  max-width: 260px;
+  text-align: center;
+  min-height: 3em;
+  min-height: 3lh;
+  margin: 0 auto 42px;
+  /* margin: 0 0 42px 0; */
+}
+
+.back-link {
+  padding: 6px 10px 9px;
+  border-radius: 8px;
+  position: fixed;
+  top: 12px;
+  left: 12px;
+}
+
+article h2 {
+  margin: 46px 0 22px;
+}
+
+article hr {
+  border: none;
+  text-align: center;
+  margin: 48px 0;
+  height: 1.5em;
+  font-family: "Fraunces";
+  font-size: 24px;
+}
+
+article hr:before {
+  content: '§';
+}
+
+article ol {
+  list-style: none;
+  counter-reset: step-counter;
+  padding: 6px 28px 0;
+}
+
+article ol li {
+  text-indent: 24px;
+  counter-increment: step-counter;
+  margin-bottom: 26px;
+}
+
+article ol li::before  {
+  content: counter(step-counter) ". ";
+  position: absolute;
+  font-family: "Pinyon Script", cursive;
+  font-size: 72px;
+  z-index: -1;
+  left: -.65em;
+  top: .24em;
+}

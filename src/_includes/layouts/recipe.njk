@@ -1,0 +1,21 @@
+---
+layout: base.njk
+tags: 
+  - recipe
+  - post
+eleventyNavigation:
+  key: Recipe
+  parent: Home
+---
+
+<a class="back-link" href="/">
+  back
+</a>
+
+<article class="recipe">
+  <h1 class="type--fraunces-large recipe__title">{{ title }}</h1>
+
+  <div class="recipe__main">
+    {{ content | safe }} 
+  </div>
+</article>

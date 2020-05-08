@@ -1,0 +1,33 @@
+---
+title: Recipe Test
+layout: base.njk
+eleventyNavigation:
+  key: Home 
+  order: 1
+---
+
+{% import "./_includes/components/cards.njk" as cards %}
+
+<div class="intro type--fraunces-large">
+  <h1 class="home">{{ metadata.title }}</h1>, <p>an online, everyday, community cookbook. Click <button id="about-toggle" href="#info">here</button> to learn more and contribute</p>
+</div>
+
+{% include 'about.njk' %}
+
+<ul class="post-list">
+  {% for post in collections.post | reverse %}
+    {% if post.data.eleventyNavigation.key === 'Recipe' %}
+      {{ cards.recipe(post) }}
+    {# {% else %}
+      <li class="postcard postcard--post postcard--article">
+        <div>
+          <a href="{{ post.url }}"
+            style="background-color: {{ post.data.bgcolor | safe }}; color: {{ post.data.txcolor | safe }};">
+            <h3 class="type--card-title">{{ post.data.title }}</h3>
+            <span class="postcard__author type--card-author">By {{ post.data.author }}</span>
+          </a>
+        </div>
+      </li> #}
+    {% endif %} 
+  {% endfor %}
+</ul>

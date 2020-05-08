@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ title }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {# In production switch to inline styles #}
+
+
+    {% set stylesheets = [
+      "styles/type.css",
+      "styles/main.css",
+      "styles/recipe.css" 
+    ] %}
+
+    {% if node_env.environment == "production" %}
+      {% set css %}
+        {% for stylesheet in stylesheets %}
+          {% include stylesheet %}
+        {% endfor %}
+      {% endset %}
+      
+      <style>
+        {% Postcss css, null %}
+      </style>
+    {% else %}
+      {% for stylesheet in stylesheets %}
+        <link rel="stylesheet" href="/_includes/{{ stylesheet | url }}">
+      {% endfor %}
+    {% endif %}
+
+    {# Page themes #}
+
+    <style>
+      .back-link {
+        background-color: {{ txcolor | safe }};
+      }
+      
+      article ol li:before {
+        color: {{ txcolor | safe }};
+      }
+
+      article hr {
+        color: {{ txcolor | safe }};
+      }
+    </style> 
+  </head>
+  <body>
+    <main>
+      {{ content | safe }}
+    </main>
+    
+    {% include "footer.njk" %}
+  </body>
+  {% set js %}
+    {% include 'scripts/main.js'%}
+  {% endset %}
+
+  <script>
+    {{ js | jsmin | safe }}
+  </script>
+</html>

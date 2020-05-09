@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ title }}</title>
-    <meta name="description" content="">
+    <title>
+      {{ title if title else metadata.title }}
+    </title>
+    <meta name="description" content="{{ description if description else metadata.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {# In production switch to inline styles #}
-
 
     {% set stylesheets = [
       "styles/type.css",

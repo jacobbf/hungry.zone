@@ -414,6 +414,9 @@ h3 {
 
 button {
   cursor: pointer;
+  /* background: transparent;
+  border: solid 1px #5d5d5d;
+  border-radius: 2px; */
 }
 
 a:link,

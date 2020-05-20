@@ -367,7 +367,7 @@ html, body {
 }
 
 [aria-hidden="true"] {
-  visibility: hidden;
+  opacity: 0;
 }
 
 main {
@@ -605,7 +605,6 @@ header li:not(:last-child):after {
 /* About */
 #about {
   transition: transform .5s ease, opacity .3s ease;
-  opacity: 1;
   transform: translateY(0px);
   position: fixed;
   bottom: 0;

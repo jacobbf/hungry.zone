@@ -7,6 +7,9 @@ if (aboutToggle) {
   aboutToggle.onclick = (event) => {
     about.classList.toggle('hidden');
     about.toggleAttribute('aria-hidden');
+    if (about.hasAttribute('aria-hidden')) {
+      about.setAttribute('aria-hidden', 'true');
+    };
   };
   
   aboutClose.onclick = (event) => {

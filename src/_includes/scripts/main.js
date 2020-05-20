@@ -14,6 +14,7 @@ if (aboutToggle) {
   
   aboutClose.onclick = (event) => {
     about.classList.add('hidden');
+    about.setAttribute('aria-hidden', 'true');
   };
 }
 

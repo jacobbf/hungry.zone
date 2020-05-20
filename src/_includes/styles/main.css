@@ -366,6 +366,10 @@ html, body {
   height: 100%;
 }
 
+[aria-hidden="true"] {
+  visibility: hidden;
+}
+
 main {
   flex: 1 0 auto;
 }
@@ -619,7 +623,6 @@ header li:not(:last-child):after {
 
 #about.hidden {
   transition: transform .5s ease, opacity .5s ease;
-  opacity: 0;
   transform: translate(-50%, 20px);
   pointer-events: none;
 }

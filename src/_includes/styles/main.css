@@ -649,7 +649,7 @@ header li:not(:last-child):after {
   
 .about__wrapper svg {
   fill: #FCFF82;
-  height: 70px;
+  height: 3.2em;
 }
 
 #about__close {
@@ -730,6 +730,10 @@ header li:not(:last-child):after {
   }
 
   .about__wrapper .drop-cap-logo {
-    padding: 4px 30px 0 0;
+    padding: 4px 22px 0 0;
+  }
+
+  .about__wrapper svg {
+    height: 3.45em;
   }
 }

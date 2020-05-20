@@ -7,7 +7,7 @@ bgcolor: '#187C28'
 ---
 A first post! Welcome to the Hungry Zone. The idea to do a cookbook site like this first showed up in the spring of 2019 but instead of making it I played several hundred hours of Monster Hunter World. Now it’s the spring of 2020, we’re quaratining and social distancing. And while I still intend to spend several hundred hours of Animal Crossing and Dragon Quest XI S: Definitive Edition I also have a sense of ugency about documenting and sharing things that I didn't a year ago. Hopefully people who are feeling that too find there way here and we can share some food through the site.
 
-These Hot Brocs though - there's a place near my house with really great fried broccoli that I've been missing since they closed down and now that I'm staying with my parents in Queens we're trying to make it through a freezer full of frozen veggies. So far my favorite has been this lazy person's fried broccoli.
+These Hot Brocs though - this is my lazy person's version of the fried broccoli I've been missing from a place near my house that closed a little while ago. Spice them, oil them and if all goes well, you end up with a big batch of hot crispy brocs with none of the grease splatter. It also happens to be a good recipe for using some of the two million pounds of frozen broccoli my sisters bought at the begining of the quarantine. I've also been thinking you could probably batter these brocs properly and really make them fluffy, but I haven't given it a go yet - let me know if you try it!
 
 ## Ingredients
 - Any amount of broccoli (fresh or frozen)

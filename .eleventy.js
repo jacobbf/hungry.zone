@@ -35,8 +35,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/_includes/styles");
   }
   eleventyConfig.addPassthroughCopy("src/assets/");
-  eleventyConfig.addWatchTarget("./styles");
-  eleventyConfig.addWatchTarget("./assets");
 
   // Post CSS as a shortcode (this should probably be a filter instead)
   eleventyConfig.addNunjucksAsyncShortcode("Postcss", async function(rawCss, rawFilepath) {

@@ -459,10 +459,25 @@ a:active {
 }
 
 main {
-  max-width: 688px;
+  max-width: 356px;
   width: 100%;
-  padding: 36px 8px 24px 8px;
-  margin: 0 auto;
+  padding: 36px 36px;
+}
+
+.monogram {
+  max-width: 100px;
+}
+
+.placeholder {
+  color: #FCFF82;
+  fill: #FCFF82;
+  background-color: #FF7A00;
+  padding: 16px;
+  border-radius: 20px;
+}
+
+h1 {
+  margin-bottom: 4px;
 }
 
 header {
@@ -550,6 +565,7 @@ header li:not(:last-child):after {
   height: 100%;
   border-radius: inherit;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+  border-radius: 20px;
   transition: .3s ease transform, .3s ease opacity;
   opacity: 0;
   transform: translateY(0);
@@ -689,51 +705,5 @@ header li:not(:last-child):after {
 
   to {
     transform: rotate(45deg);
-  }
-}
-
-@media screen and (min-width: 625px) {
-  main {
-    padding: 48px 8px 24px 8px;
-  }
-  
-  .intro {
-    max-width: 24em;
-    padding: 0 12px 0 26px;
-  }
-
-  .postcard {
-    max-width: 50%;
-  }
-  
-  .postcard {
-    padding: 0 8px;
-  }
-
-  .postcard a {
-    padding: 14px 16px;
-  }
-}
-
-@media screen and (min-width: 950px) { 
-  main {
-    padding-top: 67px;
-    max-width: 984px;
-  }
-  
-  .postcard {
-    max-width: 33.333%;
-  }
-
-  .postcard a {
-    padding: 12px 18px 12px 16px;
-  }
-
-  .about__wrapper .drop-cap-logo {
-    padding: 4px 22px 0 0;
-  }
-
-  .about__wrapper svg {
-    height: 3.45em;
   }
 }

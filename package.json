@@ -25,7 +25,7 @@
     "cssnano": "^4.1.10",
     "del-cli": "^3.0.1",
     "npm-run-all": "^4.1.5",
-    "postcss": "^7.0.32",
+    "postcss": "^7.0.36",
     "postcss-normalize": "^9.0.0",
     "terser": "^4.8.0"
   },

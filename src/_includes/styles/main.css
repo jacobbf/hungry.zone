@@ -561,7 +561,6 @@ header li:not(:last-child):after {
 
 .postcard h3 {
   margin: 8px 0 0 0;
-  max-width: 5.5em;
   letter-spacing: -.02em;
 }
 
